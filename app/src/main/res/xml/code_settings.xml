@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:title="@string/app_name">
+
+    <PreferenceCategory
+        android:key="code_type_setting"
+        android:title="@string/code_type_setting">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_upc_a"
+            android:title="@string/code_type_upc_a" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_upc_e"
+            android:title="@string/code_type_upc_e" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="code_type_upc_e1"
+            android:title="@string/code_type_upc_e1" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_ean_8"
+            android:title="@string/code_type_ean_8" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_ean_13"
+            android:title="@string/code_type_ean_13" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_code_128"
+            android:title="@string/code_type_code_128" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_code_39"
+            android:title="@string/code_type_code_39" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_code_93"
+            android:title="@string/code_type_code_93" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_interleaved_2of5"
+            android:title="@string/code_type_interleaved_2_of_5" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="code_type_discrete_2of5"
+            android:title="@string/code_type_discrete_2_of_5" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="code_type_chinese_2of5"
+            android:title="@string/code_type_chinese_2_of_5" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_codabar"
+            android:title="@string/code_type_codabar" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="code_type_msi"
+            android:title="@string/code_type_msi" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="code_type_code_11"
+            android:title="@string/code_type_code_11" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_data_matrix"
+            android:title="@string/code_type_data_matrix" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="code_type_gs1_databar_14"
+            android:title="@string/code_type_gs1_databar_14" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="code_type_gs1_databar_limited"
+            android:title="@string/code_type_gs1_databar_limited" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_gs1_databar_expanded"
+            android:title="@string/code_type_gs1_databar_expanded" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="code_type_ocr_a"
+            android:title="@string/code_type_OCR_A" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="code_type_ocr_b"
+            android:title="@string/code_type_OCR_B" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="code_type_micr_e13b"
+            android:title="@string/code_type_OCR_MICR" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_pdf417"
+            android:title="@string/code_type_pdf417" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_micro_pdf417"
+            android:title="@string/code_type_micro_pdf417" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_qr_code"
+            android:title="@string/code_type_qr" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_micro_qr_code"
+            android:title="@string/code_type_micro_qr" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_gs1_128"
+            android:title="@string/code_type_gs1_128" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="code_type_dot_code"
+            android:title="@string/code_type_dot_code" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_aztec"
+            android:title="@string/code_type_aztec" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="code_type_han_xin"
+            android:title="@string/code_type_han_xin" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="code_type_composite_ab"
+            android:title="@string/code_type_compositeAB" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="code_type_composite_c"
+            android:title="@string/code_type_compositeC" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_japanese_postal"
+            android:title="@string/code_type_japanese_postal" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_korean_3of5"
+            android:title="@string/code_type_korean_3of5" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="code_type_matrix_2of5"
+            android:title="@string/code_type_matrix_2of5" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="code_type_maxicode"
+            android:title="@string/code_type_maxicode" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_us_planet"
+            android:title="@string/code_type_us_planet" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_us_postnet"
+            android:title="@string/code_type_us_postnet" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_uk_postal"
+            android:title="@string/code_type_uk_postal" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_netherlands_kix"
+            android:title="@string/code_type_netherlands_kix" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="code_type_australian_postal"
+            android:title="@string/code_type_australian_postal" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="code_type_upu_fics_postal"
+            android:title="@string/code_type_upu_fics_postal" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

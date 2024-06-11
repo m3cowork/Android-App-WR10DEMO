@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_code_type"
+        android:title="@string/code_type_settings" />
+    <item
+        android:id="@+id/menu_export"
+        android:visible="false"
+        android:title="@string/export_settings" />
+    <item
+        android:id="@+id/menu_import"
+        android:visible="false"
+        android:title="@string/import_settings" />
+    <item
+        android:id="@+id/menu_info"
+        android:visible="false"
+        android:title="@string/info" />
+    <item
+        android:id="@+id/menu_scanner_default"
+        android:visible="false"
+        android:title="@string/scanner_default"  />
+    <item
+        android:id="@+id/menu_hid"
+        android:visible="false"
+        android:title="@string/scanner_hid"  />
+    <item
+        android:id="@+id/menu_spp"
+        android:visible="false"
+        android:title="@string/scanner_spp"  />
+    <item
+        android:id="@+id/menu_none"
+        android:visible="false"
+        android:title="@string/scanner_none"  />
+</menu>
+
+<!--
+
+    <item
+        android:id="@+id/menu_sync"
+        android:title="@string/sync_settings" />
+
+
+<item
+android:id="@+id/menu_scanner_reset"
+android:title="Settings Reset" />
+-->

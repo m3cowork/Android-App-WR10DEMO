@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/header_item"
+        android:title="Your Arbitrary String"
+        android:textColor="#FF0000"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/profile_edit"
+        android:title="Edit profile"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/profile_rename"
+        android:title="Rename profile"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/profile_delete"
+        android:title="Delete profile"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/profile_clone"
+        android:title="Clone profile"
+        app:showAsAction="always" />
+</menu>
+
+
+

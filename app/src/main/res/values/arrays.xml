@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="read_mode">
+        <item>@string/read_async</item>
+        <item>@string/read_sync</item>
+        <item>@string/read_continue</item>
+    </string-array>
+    <string-array name="read_mode_value">ㅈ
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="read_mode_2d">
+        <item>@string/read_async</item>
+        <item>@string/read_sync</item>
+        <item>@string/read_continue</item>
+        <item>@string/read_multiple</item>
+        <item>@string/read_presentation</item>
+        <item>@string/read_aiming_and_release</item>
+    </string-array>
+    <string-array name="read_mode_value_2d">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="output_mode">
+        <item>@string/copy_and_paste</item>
+        <item>@string/commit_text</item>
+        <item>@string/key_emulation</item>
+        <item>@string/none</item>
+    </string-array>
+    <string-array name="output_mode_value">
+        <item>0</item>
+        <item>3</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="end_char">
+        <item>@string/end_char_enter</item>
+        <item>@string/end_char_space</item>
+        <item>@string/end_char_tab</item>
+        <item>@string/end_char_keyboard_enter</item>
+        <item>@string/end_char_keyboard_space</item>
+        <item>@string/end_char_keyboard_tab</item>
+        <item>@string/end_char_null</item>
+    </string-array>
+    <string-array name="inverse_1d">
+        <item>@string/inverse_1d_regular</item>
+        <item>@string/inverse_1d_inverse</item>
+        <item>@string/inverse_1d_autodetect</item>
+    </string-array>
+    <string-array name="twod_h_inverse_1d">
+        <item>@string/inverse_1d_regular</item>
+        <item>@string/inverse_1d_inverse</item>
+    </string-array>
+    <string-array name="aimer_illumination">
+        <item>Aimer and Illumination</item>
+        <item>Aimer only</item>
+        <item>Illumination only</item>
+    </string-array>
+    <string-array name="aimer_illumination_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="end_char_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="inverse_1d_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="twod_h_inverse_1d_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="transmit_code_id">
+        <item>@string/transmit_code_none</item>
+        <item>@string/transmit_code_aim_code</item>
+        <item>@string/transmit_code_symbol_code</item>
+    </string-array>
+    <string-array name="transmit_code_id_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="data_matix_inverse_option">
+        <item>@string/data_matix_inverse_regular_only</item>
+        <item>@string/data_matix_inverse_inverse_only</item>
+        <item>@string/data_matix_inverse_inverse_autodetect</item>
+    </string-array>
+    <string-array name="data_matix_inverse_option_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="scannerid_id">
+        <item>@string/scannerid_0</item>
+        <item>@string/scannerid_1</item>
+        <item>@string/scannerid_2</item>
+        <item>@string/scannerid_3</item>
+    </string-array>
+    <string-array name="scannerid_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="sound_mode">
+        <item>None</item>
+        <item>Beep</item>
+        <item>Ding-Dong</item>
+    </string-array>
+    <string-array name="sound_mode_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="security_level">
+        <item>Level 1</item>
+        <item>Level 2</item>
+        <item>Level 3</item>
+        <item>Level 4</item>
+    </string-array>
+    <string-array name="security_level_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="upca_preamble">
+        <item>@string/upca_preamble_1</item>
+        <item>@string/upca_preamble_2</item>
+        <item>@string/upca_preamble_3</item>
+    </string-array>
+    <string-array name="upca_preamble_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <!-- upc/ean -->
+    <string-array name="ue_supple_mode">
+        <item>Decode UPC/EAN With Supplementals</item>
+        <item>Ignore UPC/EAN With Supplementals</item>
+        <item>Autodiscriminate UPC/EAN Supplementals</item>
+        <item>Enable 378/379 Supplemental Mode</item>
+        <item>Enable 978/979 Supplemental Mode</item>
+        <item>Enable 977 Supplemental Mode</item>
+        <item>Enable 414/419/434/439 Supplemental Mode</item>
+        <item>Enable 491 Supplemental Mode</item>7
+        <item>Enable Smart Supplemental Mode</item>
+        <item>Supplemental User-Programmable Type 1</item>
+        <item>Supplemental User-Programmable Type 1 and 2</item>
+        <item>Smart Supplemental Plus User-Programmable 1</item>
+        <item>Smart Supplemental Plus User-Programmable 1 and 2</item>
+    </string-array>
+    <string-array name="ue_supple_mode_values">
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+        <item>7</item>
+        <item>6</item>
+        <item>8</item>
+        <item>3</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="ue_security_lv">
+        <item>UPC/EAN Security Level 0</item>
+        <item>UPC/EAN Security Level 1</item>
+        <item>UPC/EAN Security Level 2</item>
+        <item>UPC/EAN Security Level 3</item>
+    </string-array>
+    <string-array name="ue_security_lv_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="ue_bookland_isbn_format">
+        <item>Bookland ISBN-10</item>
+        <item>Bookland ISBN-13</item>
+    </string-array>
+    <string-array name="ue_bookland_isbn_format_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="ue_2d_supplemental_aim_id">
+        <item>Separate</item>
+        <item>Combined</item>
+        <item>Separate Transmissions</item>
+    </string-array>
+    <string-array name="ue_2d_supplemental_aim_id_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="ue_2d_coupon_report">
+        <item>Old Coupon Symbols</item>
+        <item>New Coupon Symbols</item>
+        <item>Both Coupon Formats</item>
+    </string-array>
+    <string-array name="ue_2d_coupon_report_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="multi_decode_number_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="code39_security">
+        <item>Security Level 0</item>
+        <item>Security Level 1</item>
+        <item>Security Level 2</item>
+        <item>Security Level 3</item>
+
+    </string-array>
+    <string-array name="code39_security_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="code128_ISBT128_Concatenation">
+        <item>Concat Mode Never</item>
+        <item>Concat Mode Always</item>
+        <item>Concat Mode Auto</item>
+    </string-array>
+    <string-array name="code128_ISBT128_Concatenation_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="code128_security">
+        <item>Security Level 0</item>
+        <item>Security Level 1</item>
+        <item>Security Level 2</item>
+        <item>Security Level 3</item>
+    </string-array>
+    <string-array name="code128_security_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="composite_upc_mode_names">
+        <item>UPC Never Linked</item>
+        <item>UPC Always Linked</item>
+        <item>Auto Discriminate</item>
+
+    </string-array>
+    <string-array name="composite_upc_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="gs1_limited_security_names">
+        <item>Security Level 0</item>
+        <item>Security Level 1</item>
+        <item>Security Level 2</item>
+        <item>Security Level 3</item>
+
+    </string-array>
+    <string-array name="gs1_limited_security_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="hanxin_inverse_names">
+        <item>Regular Only</item>
+        <item>Inverse Only</item>
+        <item>Inverse Autodetect</item>
+    </string-array>
+    <string-array name="hanxin_inverse_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!--MSI check_digit-->
+    <string-array name="msi_check_digit_names">
+        <item>One Check Digit</item>
+        <item>Two Check Digit</item>
+    </string-array>
+
+    <string-array name="msi_check_digit_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <!--MSI check_digit_algoritm-->
+    <string-array name="msi_check_digit_algoritm_names">
+        <item>MOD-11-10</item>
+        <item>MOD-10-10</item>
+    </string-array>
+
+    <string-array name="msi_check_digit_algoritm_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="ic_illu_level_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="ic_resolution">
+        <item>Full</item>
+        <item>1/2</item>
+        <item>1/4</item>
+    </string-array>
+    <string-array name="ic_resolution_values">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="ic_enhancement">
+        <item>Off</item>
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="ic_enhancement_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="decode_window_mode">
+        <item>Normal</item>
+        <item>Aimer</item>
+        <item>Filed Of View</item>
+        <item>Sub Image</item>
+    </string-array>
+    <string-array name="decode_window_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="decode_window_mode_description">
+        <item>Normal Decode</item>
+        <item>Window around aimer (center of image must be covered, since the aimer coordinates offset the window from center)</item>
+        <item>Window as defined in field of view</item>
+        <item>Sub-image or window as defined in field of view (barcode must be decodable within entire window)</item>
+    </string-array>
+
+    <string-array name="idc_operating_mode">
+        <item>Off</item>
+        <item>Anchored</item>
+        <!--<item>Free-Form</item>-->
+        <item>Linked</item>
+    </string-array>
+    <string-array name="idc_operating_mode_value">
+        <item>0</item>
+        <item>1</item>
+        <!--<item>2</item>-->
+        <item>3</item>
+    </string-array>
+    <string-array name="idc_border_type">
+        <item>None</item>
+        <item>Black</item>
+        <item>White</item>
+        <item>Advanced Edge Detection</item>
+    </string-array>
+
+    <string-array name="idc_border_type_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="quiet_zone_level">
+        <item>Level 0</item>
+        <item>Level 1</item>
+        <item>Level 2</item>
+        <item>Level 3</item>
+    </string-array>
+
+    <string-array name="quiet_zone_level_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="poor_quality_decode_level">
+        <item>Effort Level 0</item>
+        <item>Effort Level 1</item>
+        <item>Effort Level 2</item>
+        <item>Effort Level 3</item>
+    </string-array>
+
+    <string-array name="poor_quality_decode_level_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="pick_list_mode_name">
+        <item>Disabled</item>
+        <item>Hardware Picklist</item>
+        <item>Software Picklist</item>
+    </string-array>
+
+    <string-array name="pick_list_mode_value">
+        <item>0</item>
+        <item>2</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="codabar_security">
+        <item>Security Level 0</item>
+        <item>Security Level 1</item>
+        <item>Security Level 2</item>
+        <item>Security Level 3</item>
+
+    </string-array>
+    <string-array name="codabar_security_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="itof_security">
+        <item>I2of5 Security Level 0</item>
+        <item>I2of5 Security Level 1</item>
+        <item>I2of5 Security Level 2</item>
+        <item>I2of5 Security Level 3</item>
+
+    </string-array>
+    <string-array name="itof_security_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="itof_check_digit">
+        <item>No Check Digit</item>
+        <item>USS Check Digit</item>
+        <item>OPCC Check Digit</item>
+    </string-array>
+
+    <string-array name="itof_check_digit_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="dot_inverse_name">
+        <item>Disable</item>
+        <item>Enable</item>
+        <item>Auto</item>
+    </string-array>
+
+    <string-array name="log_level">
+        <item>VERBOSE</item>
+        <item>DEBUG</item>
+        <item>INFO</item>
+        <item>WARN</item>
+        <item>ERROR</item>
+    </string-array>
+
+    <string-array name="log_level_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="dot_inverse_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="dot_mirror_name">
+        <item>Disable</item>
+        <item>Enable</item>
+        <item>Auto</item>
+    </string-array>
+
+    <string-array name="dot_mirror_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="scanner_select_name">
+        <item>Auto (%1$s)</item>
+        <item>%1$s</item>
+        <item>Ring Scanner (%1$s)</item>
+    </string-array>
+
+    <string-array name="scanner_select_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="newline_names">
+        <item>CR+LF</item>
+        <item>LF</item>
+        <item>&lt;none&gt;</item>
+    </string-array>
+    <string-array name="newline_values">
+        <item>\u000d\u000a</item>
+        <item>\u000a</item>
+        <item></item>
+    </string-array>
+
+</resources>
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <string-array name="newline_names">
+            <item>CR+LF</item>
+            <item>LF</item>
+            <item>&lt;none&gt;</item>
+        </string-array>
+        <string-array name="newline_values">
+            <item>\u000d\u000a</item>
+            <item>\u000a</item>
+            <item></item>
+        </string-array>
+    </resources>
+    -->
