@@ -1,0 +1,164 @@
+
+package com.m3.wr10.sdk_demo.wr10;
+
+import android.app.ActivityManager;
+import android.app.ActivityManager.RunningServiceInfo;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Environment;
+
+/*
+import net.m3mobile.app.scanemul.Honeywell2D.ScanEmul_Honey2D;
+import net.m3mobile.app.scanemul.Zebra1D.ScanEmul_Zebra1D;
+import net.m3mobile.app.scanemul.Zebra2D.ScanEmul_Zebra2D;
+import net.m3mobile.app.scannercontrol.DataType;
+import net.m3mobile.app.scannercontrol.LogWriter;
+import net.m3mobile.app.scannercontrol.ScannerDBConfig;
+import net.m3mobile.app.scannerservice.ScannerServiceUnified;
+*/
+
+import java.io.File;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+/// import androidx.preference.PreferenceFragmentCompat;
+
+/// import static net.m3mobile.app.scannercontrol.ConstantVariables.SCANNER_ACTION_SETTING_CHANGE;
+
+public class ScanEmulActivity extends AppCompatActivity {
+    public static final String softScanTrigger = "com.motorolasolutions.emdk.datawedge.api.ACTION_SOFTSCANTRIGGER";
+    public static final String extraData = "com.motorolasolutions.emdk.datawedge.api.EXTRA_PARAMETER";
+    public static final String motoStartScan = "START_SCANNING";
+    public static final String motoStopScan = "STOP_SCANNING";
+    public static final String motoToggleScan = "TOGGLE_SCANNING";
+
+    public static int mProfileID;
+///    protected static ScannerDBConfig mConfig;
+
+    // endregion
+    protected static void getFirmwareFilePath(final Context context) {
+        String path = Environment.getExternalStorageDirectory().getPath() + "/Download/";
+        LogWriter.i("Z2D firm folder: " + path);
+
+        File file = new File(path);
+        File[] files = file.listFiles((filePath, fileName) -> (fileName.endsWith("DAT")
+                || fileName.endsWith("dat")));
+
+        assert files != null;
+        for (final File firmFile : files) {
+            LogWriter.i("Z2D firm path: " + firmFile.getPath() + " name: " + firmFile.getName());
+            String strMsg = String.format(
+                    "The Firmware ('%s') will be updated and deleted. Do you agree with that?",
+                    firmFile.getName());
+
+            AlertDialog.Builder deleteAlert = new AlertDialog.Builder(context);
+            deleteAlert.setMessage(strMsg)
+                    .setCancelable(false)
+                    .setPositiveButton("OK", (dialog, which) -> {
+                        String strFirmPath = firmFile.getPath();
+                        Intent intent = new Intent(SCANNER_ACTION_SETTING_CHANGE);
+                        intent.putExtra("setting", "firmware_update");
+                        intent.putExtra("file_path", strFirmPath);
+                        intent.putExtra("profile_id", mProfileID);
+                        context.sendBroadcast(intent);
+                    })
+                    .setNegativeButton("Cancel", (dialog, which) -> dialog.cancel());
+
+            AlertDialog alert = deleteAlert.create();
+            alert.show();
+        }
+    }
+
+    public static byte[] hexToByteArray(String hex) {
+        if (hex == null || hex.length() == 0) return null;
+        if (hex.length() % 2 != 0) return null;
+        byte[] ba = new byte[hex.length() / 2];
+        try {
+            for (int i = 0; i < ba.length; i++) {
+                int nTemp = Integer.parseInt(hex.substring(2 * i, 2 * i + 2), 16);
+                if (nTemp < 0x00 || nTemp > 0xff) return null;
+                ba[i] = (byte) nTemp;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+        return ba;
+    }
+
+    public static ScannerDBConfig getDBConfig() {
+        return mConfig;
+    }
+
+    public static boolean isMyServiceRunning(Context context, Class<?> serviceClass) {
+        ActivityManager manager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        for (RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+            if (serviceClass.getName().equals(service.service.getClassName())) {
+                LogWriter.i("Service Exist - " + serviceClass);
+                return true;
+            }
+        }
+        LogWriter.i("Service does not exist - " + serviceClass);
+        return false;
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        LogWriter.i("+++");
+        Intent intent = getIntent();
+        mProfileID = intent.getIntExtra("profile_id", 0);
+        if (mProfileID == 0) {
+            LogWriter.w("Profile ID not contained, maybe external call.");
+            mProfileID = 1;
+        }
+        mConfig = ScannerDBConfig.getInstance(this);
+
+        PreferenceFragmentCompat settingsFragment = null;
+        DataType.ScannerType scannerType = DataType.SCANNER_MODULE.type;
+        LogWriter.i("Load menu " + scannerType);
+
+        switch (scannerType) {
+            case NOTHING:
+            case ZEBRA1D:
+            case ZEBRA1D2:
+                settingsFragment = new ScanEmul_Zebra1D.PrefsSettingsFragment();
+                break;
+            case ZEBRA2D:
+                settingsFragment = new ScanEmul_Zebra2D.PrefsSettingsFragment();
+                break;
+            case HONEY:
+                settingsFragment = new ScanEmul_Honey2D.PrefsSettingsFragment();
+                break;
+        }
+        if (settingsFragment != null) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(android.R.id.content, settingsFragment)
+                    .commit();
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        LogWriter.d("+++");
+        mConfig = null;
+        mProfileID = 0;
+        super.onDestroy();
+    }
+
+    @Override
+    public void onStop() {
+        LogWriter.d("+++");
+        super.onStop();
+        if (mProfileID == ScannerDBConfig.mProfileID) {
+            LogWriter.d("id: " + mProfileID);
+            ScannerServiceUnified scannerService = ScannerServiceUnified.getService();
+            if (scannerService != null) {
+                scannerService.refresh();
+            }
+        }
+        LogWriter.d("---");
+    }
+}

@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">WR Demo(2.03)</string>
+
+    <string name="scan_start">Read</string>
+    <string name="scan_stop">Cancel</string>
+    <string name="scan_enable">Enable</string>
+    <string name="scan_disable">Disable</string>
+    <string name="scan_is_enable">Is</string>
+
+
+    <string name="code_number">Code Number</string>
+    <string name="code_value">Value</string>
+
+
+
+
+
+    <string name="action_settings">Settings</string>
+    <string name="profiles_title">ScanEmul Profiles</string>
+
+    <string name="scanner_settings_on">Enabled</string>
+    <string name="scanner_settings_off">Disabled</string>
+
+    <string name="setting_associated_apps_title">Associated Apps</string>
+    <string name="setting_associated_apps_summary">Associate apps to this profile</string>
+
+
+    <string name="scanner_settings_topbutton_on">Use the scanner UI button</string>
+    <string name="scanner_settings_topbutton_off">Turn off the scanner UI button</string>
+
+
+    <string name="profile_add_title">Add Profile</string>
+    <string name="scanner_title">Scanner</string>
+    <string name="scanner_info">Waitting for scanning......</string>
+    <string name="copy" tools:ignore="PrivateResource">Copy</string>
+    <string name="scan">Scan</string>
+    <string name="cancel">Cancel</string>
+    <string name="decode_timeout">Decode timed out</string>
+    <string name="decode_cancel">Decode cancel</string>
+
+    <string name="scanner_settings_soundandvibrate">Sound and Vibrate and LED</string>
+    <string name="scanner_settings_general">General settings</string>
+    <string name="scanner_settings_switch">Is enabled or not</string>
+    <string name="scanner_settings_output_mode">Output Mode</string>
+    <string name="scanner_settings_read_mode">Read Mode</string>
+    <string name="scanner_settings_end_char">End character</string>
+    <string name="scanner_settings_prefix">Prefix</string>
+    <string name="scanner_settings_postfix">Postfix</string>
+    <string name="scanner_settings_sound">Sound</string>
+    <string name="scanner_settings_volumePreference">Volume</string>
+    <string name="scanner_settings_sound_on">Sound on</string>
+    <string name="scanner_settings_sound_off">Sound off</string>
+    <string name="scanner_settings_vibration">Vibration</string>
+    <string name="scanner_settings_vibration_on">Vibration on</string>
+    <string name="scanner_settings_vibration_off">Vibration off</string>
+    <string name="scanner_settings_led">LED</string>
+    <string name="scanner_settings_led_on">LED on</string>
+    <string name="scanner_settings_led_off">LED off</string>
+    <string name="scanner_settings_led_time">LED Time:[1~1000MSec]</string>
+    <string name="scanner_settings_other">Other</string>
+    <string name="scanner_settings_topbutton">Scanner Button</string>
+
+    <string name="code_type_setting">Code type</string>
+    <string name="code_type_upc_a">UPC-A</string>
+    <string name="code_type_upc_e">UPC-E</string>
+    <string name="code_type_upc_e1">UPC-E1</string>
+    <string name="code_type_ean_8">EAN-8</string>
+    <string name="code_type_ean_13">EAN-13</string>
+    <string name="code_type_code_128">Code 128</string>
+    <string name="code_type_code_39">Code 39</string>
+    <string name="code_type_code_93">Code 93</string>
+    <string name="code_type_interleaved_2_of_5">Interleaved 2 of 5</string>
+    <string name="code_type_discrete_2_of_5">Discrete 2 of 5</string>
+    <string name="code_type_chinese_2_of_5">Chinese 2 of 5</string>
+    <string name="code_type_codabar">Codabar</string>
+    <string name="code_type_msi">MSI</string>
+    <string name="code_type_code_11">Code 11</string>
+    <string name="code_type_gs1_databar_14">GS1 DataBar-14</string>
+    <string name="code_type_gs1_databar_limited">GS1 DataBar Limited</string>
+    <string name="code_type_gs1_databar_expanded">GS1 DataBar Expanded</string>
+    <string name="code_type_codablock">Codablock</string>
+
+    <string name="scanner_settings_type_title">Code Types Settings</string>
+    <string name="scanner_settings_type_summary">Which types to be supported</string>
+    <string name="scanner_code_type_params_title">Code Type params</string>
+    <string name="scanner_code_type_params_summary">Setup code-type specific parameters</string>
+    <string name="scanner_reader_params_title">Reader params</string>
+    <string name="scanner_reader_params_summary">Set up reader specific parameters</string>
+    <string name="scanner_scan_params_title">Scan params</string>
+    <string name="scanner_scan_params_summary">Set up scan specific parameters</string>
+
+    <string name="basic_data_formatting_title">Basic data formatting</string>
+    <string name="basic_data_formatting_summary">Apply simple formatting for Keystroke output</string>
+
+    <string name="imagecapture_settings_title">ImageCapture params</string>
+
+    <string name="copy_and_paste">Copy and Paste</string>
+    <string name="commit_text">Commit Text</string>
+    <string name="key_emulation">Key Emulation</string>
+    <string name="none">None(Copy to clipboard)</string>
+
+    <string name="read_sync">Sync Mode</string>
+    <string name="read_async">Async Mode</string>
+    <string name="read_continue">Continue Mode</string>
+    <string name="read_multiple">Multiple Mode</string>
+    <string name="read_presentation">Presentation</string>
+    <string name="read_aiming_and_release">Aiming and Release</string>
+
+    <string name="result_title">RESULT WINDOW</string>
+    <string name="result_codetype">CODE TYPE</string>
+    <string name="result_data">DATA</string>
+    <string name="result_aging_title">RESULT AGING WINDOW</string>
+
+
+    <string name="end_char_enter">Enter</string>
+    <string name="end_char_space">Space</string>
+    <string name="end_char_tab">Tab</string>
+    <string name="end_char_keyboard_enter">Keyboard Enter</string>
+    <string name="end_char_keyboard_space">Keyboard Space</string>
+    <string name="end_char_keyboard_tab">Keyboard Tab</string>
+    <string name="end_char_null">Null</string>
+
+    <string name="substring_title">Substring Formation:[beginIndex, endIndex]</string>
+
+    <string name="code_setting_transmit_code">Transmit Code ID</string>
+    <string name="transmit_code_none">None</string>
+    <string name="transmit_code_aim_code">AIM Code ID</string>
+    <string name="transmit_code_symbol_code">Symbol Code ID</string>
+
+    <string name="code_setting_scanner_id">Set Using Camera ID</string>
+    <string name="scannerid_0">Camera ID:0</string>
+    <string name="scannerid_1">Camera ID:1</string>
+    <string name="scannerid_2">Camera ID:2</string>
+    <string name="scannerid_3">Camera ID:3</string>
+
+    <string name="code_type_failed_to_enable">Failed to enable this type of code,please try again.</string>
+    <string name="code_type_failed_to_disable">Failed to disable this type of code,please try again.</string>
+    <string name="scanner_is_setting">Scanner is setting,please wait!</string>
+    <string name="scanner_is_initializing">Scanner is initializing,please wait!</string>
+    <string name="scanner_set_types_later">Scanner is initializing,please set types later!</string>
+    <string name="scanner_init_success">Scanner is initialized successfully!</string>
+    <string name="scanner_init_failed">Failed to initialize scanner.</string>
+    <string name="scanner_failed_to_enable">Failed to enable scanner.</string>
+    <string name="scanner_failed_to_disable">Failed to disable scanner.</string>
+
+    <string name="scanner_settings_security_level">Linear Code Type Security Level</string>
+
+    <string name="intent_output_title">Intent Output</string>
+    <string name="intent_enable_title">Enabled</string>
+    <string name="intent_enable_summary">Enable/disable output via intent</string>
+    <string name="intent_action_title">Intent Action</string>
+    <string name="intent_category_title">Intent Category</string>
+    <string name="intent_extra_data_title">Intent Extra Data</string>
+    <string name="intent_extra_type_title">Intent Extra Type</string>
+
+    <string name="scanner_output_hexcode">Hexcode</string>
+    <string name="scanner_mobile_mode_title">Read Mobile Barcode</string>
+    <string name="scanner_hexcode_on_summary">Output data to Hexadecimal</string>
+    <string name="scanner_hexcode_off_summary">Output data to Ascii</string>
+
+    <!-- 1.5.1 adaptive scanning -->
+    <string name="scanner_adaptive_scanning">Enable Adaptive Scanning</string>
+    <string name="scanner_adaptive_scanning_summary">To improve decode range and optimize decode performance.</string>
+
+    <string name="mobile_on_summary">Improves Barcode reading performance on mobile phones</string>
+    <string name="mobile_off_summary">Disable mobile phone barcode mode</string>
+
+    <string name="scanner_settings_readingoption">Reading Option</string>
+    <string name="scanner_settings_prefixandpostfix">Prefix and Postfix</string>
+
+    <string name="as_asciicode">Prefix and Postfix as Ascii Hex code</string>
+    <string name="as_asciicode_enable">Ascii Hexadecimal code</string>
+    <string name="as_asciicode_disable">Ascii String</string>
+
+    <string name="aimer_illumination_title">Aimer and Illumination settings</string>
+    <string name="laser_on_time_title">Laser On Time:[1~10Sec]</string>
+    <string name="default_reset">Default Reset</string>
+
+    <string name="scanner_settings_scannersettings">Scanner settings</string>
+
+    <!-- data matrix settings -->
+    <string name="option_datamatrix_title">Datamatrix Setting</string>
+    <string name="code_type_data_matrix">Data Matrix</string>
+    <string name="code_type_data_matrix_inverse">Data Matrix Inverse</string>
+    <string name="data_matix_inverse_regular_only">Regular Only</string>
+    <string name="data_matix_inverse_inverse_only">Inverse Only</string>
+    <string name="data_matix_inverse_inverse_autodetect">Inverse Auto Detect</string>
+    <string name="option_data_matrix_ink_spread">Data Matrix Ink Spread</string>
+
+    <string name="profile_result_window">Result Window</string>
+    <string name="setting_result_window_summary">Barcode scanning test</string>
+
+    <string name="profile_image_capture">Image Capture</string>
+
+    <string name="profile_export">DB Export</string>
+    <string name="profile_import">DB Import</string>
+
+    <string name="log_level">Output Log higher</string>
+
+
+    <string name="scanner_center_decode_title">Centering mode</string>
+    <string name="center_on_summary">Only the bar code in the center of the image is decoded</string>
+    <string name="center_off_summary">Any bar code within the field of view can be decoded</string>
+
+    <string name="option_upca_title">UPC-A Setting</string>
+    <string name="upca_preamble_title">UPC-A Preamble</string>
+    <string name="upca_transmit_check_digit">Report Check Digit</string>
+
+    <string name="upca_preamble_1">Preamble None</string>
+    <string name="upca_preamble_2">Preamble Sys Char</string>
+    <string name="upca_preamble_3">Preamble Country And Sys Char</string>
+
+    <!-- codabar Settings -->
+    <string name="option_codabar_title">Codabar Setting</string>
+    <string name="option_codabar_length1">Length1:[0..55]</string>
+    <string name="option_codabar_length2">Length2:[0..55]</string>
+    <string name="option_codabar_clsi">CLSI Editing</string>
+    <string name="option_codabar_notis">NOTIS Editing</string>
+    <string name="option_codabar_security_level">Security Level</string>
+
+    <!-- itof Settings -->
+    <string name="option_itof_title">Interleaved 2of5 Setting</string>
+    <string name="option_itof_min">Length1:[0..55]</string>
+    <string name="option_itof_max">Length2:[0..55]</string>
+    <string name="option_itof_check_digit">Check Digit</string>
+    <string name="option_itof_transmit">Report Check Digit</string>
+    <string name="option_itof_security_level">I2of5 Security Level</string>
+    <string name="option_itof_convert_to_ean13">Convert ITF-14 To EAN 13</string>
+    <string name="option_itof_reduced_quietzone">I2of5 Reduced Quiet Zone</string>
+
+    <!-- code 39 Settings -->
+    <string name="option_code39_title">Code 39 Setting</string>
+    <string name="option_code39_trioptic">Trioptic Code 39</string>
+    <string name="option_code39_min">Length1:[0..55]</string>
+    <string name="option_code39_max">Length2:[0..55]</string>
+    <string name="option_code39_reduced_quiet_zone">Code39 Reduced Quiet Zone</string>
+    <string name="option_code39_convert_to_code32">Convert Code39 To Code32</string>
+    <string name="option_code39_full_ascii">Full ASCII</string>
+    <string name="option_code39_transmit">Report Check Digit</string>
+    <string name="option_code32_prefix">Report Code32 Prefix</string>
+    <string name="option_code39_security_level">Security Level</string>
+    <string name="option_code39_check_enable">Verify Check Digit</string>
+
+    <!-- code 11 Settings -->
+    <string name="option_code11_title">Code 11 Setting</string>
+    <string name="option_code11_length1">Length1:[0..55]</string>
+    <string name="option_code11_length2">Length2:[0..55]</string>
+    <string name="option_code11_check_digit">Report Check Digit</string>
+    <string name="option_code11_verify_check_digit">Verify Check Digit</string>
+
+    <!-- code 93 Settings -->
+    <string name="option_code93_title">Code 93 Setting</string>
+    <string name="option_code93_length1">Length1:[0..55]</string>
+    <string name="option_code93_length2">Length2:[0..55]</string>
+
+    <!-- code 128 Settings -->
+    <string name="option_code128_title">Code 128 Setting</string>
+    <string name="option_code128_length1">Length1:[0..55]</string>
+    <string name="option_code128_length2">Length2:[0..55]</string>
+    <string name="option_code128_gs1_128">Enable GS1-128</string>
+    <string name="option_code128_isbt128">Enable ISBT128</string>
+    <string name="option_code128_isbt_concate">ISBT128 Concatenation Mode</string>
+    <string name="option_code128_check_isbt">Check ISBT TABLE</string>
+    <string name="option_code128_security">Security Level</string>
+    <string name="option_code128_reduced_quiet_zone">Code128 Reduced Quiet Zone</string>
+    <string name="option_code128_fnc4_ignore">Ignore Code128 FNC4</string>
+    <string name="option_code128_ai_deli_default">Default delimiter for all AIs</string>
+    <string name="option_code128_ai_deli_before">Delimiter before each AI</string>
+    <string name="option_code128_ai_deli_after">Delimiter After each AI</string>
+    <string name="option_code128_emulation">Emulation Mode (Ring Scanner)</string>
+
+    <!-- composite -->
+    <string name="option_composite_title">Composite Setting</string>
+    <string name="option_composite_tlc39">Composite TLC39</string>
+    <string name="option_composite_upc_mode">UPC Composite Mode</string>
+
+    <!-- discrete 2of5 -->
+    <string name="option_discrete2of5_title">Discrete 2of5 Setting</string>
+    <string name="option_discrete2of5_length1">Length1:[0..55]</string>
+    <string name="option_discrete2of5_length2">Length2:[0..55]</string>
+
+    <!-- gs1 limited -->
+    <string name="option_gs1_limited_title">GS1 DataBar Limited Setting</string>
+    <string name="option_gs1_limited_security">GS1 Limited Security Level</string>
+
+    <!-- hanxin -->
+    <string name="option_hanxin_title">HAN XIN Setting</string>
+    <string name="option_hanxin_inverse">HAN XIN Inverse</string>
+
+    <!-- Matrix 2of5 Settings -->
+    <string name="option_matrix2of5_title">Matrix 2of5 Setting</string>
+    <string name="option_matrix2of5_length1">Length1:[0..55]</string>
+    <string name="option_matrix2of5_length2">Length2:[0..55]</string>
+    <string name="option_matrix2of5_redundancy">Redundancy</string>
+    <string name="option_matrix2of5_check_digit_transmit">Report Check Digit</string>
+    <string name="option_matrix2of5_check_digit_verify">Verify Check Digit</string>
+
+    <!-- MSI Settings -->
+    <string name="option_msi_title">MSI Setting</string>
+    <string name="option_msi_length1">Length1:[0..55]</string>
+    <string name="option_msi_length2">Length2:[0..55]</string>
+    <string name="option_msi_check_digit">CheckDigit</string>
+    <string name="option_msi_check_digit_algoritm">Check Digit Scheme</string>
+    <string name="option_msi_check_digit_transmit">Report Check Digit</string>
+
+    <!-- US Planet Settings -->
+    <string name="option_usplanet_title">US Planet</string>
+    <string name="option_usplanet_check_digit_transmit">Report Check Digit</string>
+
+    <!-- UK Postal Settings -->
+    <string name="option_ukpostal_title">UK Postal</string>
+    <string name="option_ukpostal_check_digit_transmit">Report Check Digit</string>
+
+    <!-- UPCE0 Settings -->
+    <string name="option_upce_title">UPCE0</string>
+    <string name="option_upce_convert_to_upca">Convert UPCE0 To UPCA</string>
+    <string name="option_upce_preamble">UPCE0 Preamble</string>
+    <string name="option_upce_check_digit_transmit">Report Check Digit</string>
+
+    <!-- UPCE1 Settings -->
+    <string name="option_upce1_title">UPCE1</string>
+    <string name="option_upce1_convert_to_upca">Convert UPCE1 To UPCA</string>
+    <string name="option_upce1_preamble">UPCE1 Preamble</string>
+    <string name="option_upce1_check_digit_transmit">Report Check Digit</string>
+
+
+    <!-- DotCode Settings -->
+    <string name="option_dot_title">DotCode</string>
+    <string name="option_dot_inverse">DotCode Inverse</string>
+    <string name="option_dot_mirror">DotCode Mirror</string>
+    <string name="option_dot_prioritize">DotCode Prioritize</string>
+
+
+    <!-- upcean Settings -->
+    <string name="option_upcean_title">UPC/EAN</string>
+    <string name="option_ue_supplemental_title">Supplemental Mode</string>
+    <string name="option_ue_ean_zero_ex_title">EAN Zero Extend</string>
+    <string name="option_ue_security_lv_title">Security Level</string>
+    <string name="option_ue_bookland_isbn_title">Bookland</string>
+    <string name="option_ue_ucc_coupon_ex_title">UCC Coupon Extend</string>
+    <string name="option_ue_issn_ean_title">ISSN EAN</string>
+    <string name="option_ue_supplemental_aim_id_title">Supplemental AIM ID Format</string>
+    <string name="option_ue_upc_reduced_quiet_zone_title">UPC Reduced Quiet Zone</string>
+    <string name="option_ue_coupon_report_title">Coupon Report</string>
+    <string name="option_ue_ean8_transmit_check_digit_title">Report EAN-8 Check Digit</string>
+    <string name="option_ue_ean13_transmit_check_digit_title">Report EAN-13 Check Digit</string>
+
+    <!-- debug string begin -->
+    <string name="debug_label">Scanner Debug</string>
+    <string name="decode">Decode</string>
+    <string name="snap">Snapshot</string>
+    <string name="beep">beep</string>
+    <string name="getparam">Get</string>
+    <string name="setparam">Set</string>
+    <string name="dflparam">Defaults</string>
+    <string name="decoding">decoding</string>
+    <string name="snapping">taking snapshot</string>
+    <string name="pnum">Number</string>
+    <string name="pval">Value</string>
+    <string name="sdl">SDLtestApp</string>
+    <string name="enable">EnableAll</string>
+    <string name="disable">DisableAll</string>
+    <string name="reading">Reading Pane</string>
+    <string name="DecImage">GetDecodedImage</string>
+    <string name="stat">status</string>
+    <string name="handsfree">Hands Free</string>
+    <string name="blank" />
+    <string name="data">data</string>
+    <string name="prop">Properties</string>
+    <string name="video">Video</string>
+    <string name="Params">Parameters</string>
+    <string name="status">status</string>
+    <string name="hands_free">Hands Free</string>
+    <string name="preview">Preview</string>
+    <!-- debug string end -->
+
+    <!-- OCR JJ 20170118 -->
+    <string name="code_type_OCR_A">OCR-A</string>
+    <string name="code_type_OCR_B">OCR-B</string>
+    <string name="code_type_OCR_MICR">MICR E13B</string>
+
+    <!-- Jayden 20170118 -->
+    <string name="code_type_pdf417">PDF417</string>
+    <string name="code_type_micro_pdf417">Micro PDF417</string>
+    <string name="code_type_qr">QR Code</string>
+    <string name="code_type_micro_qr">Micro QR Code</string>
+    <string name="code_type_dot_code">Dot Code</string>
+
+    <!-- Jayden 20180109 -->
+    <string name="code_type_gs1_128">GS1 128</string>
+    <string name="code_type_OCR">OCR</string>
+    <!-- yjh 20200309 -->
+    <string name="code_type_aztec">Aztec</string>
+    <string name="code_type_han_xin">HAN XIN</string>
+    <string name="code_type_compositeAB">Composite AB</string>
+    <string name="code_type_compositeC">Composite C</string>
+    <string name="code_type_japanese_postal">Japanese Postal</string>
+    <string name="code_type_korean_3of5">Korean 3of5</string>
+    <string name="code_type_matrix_2of5">Matrix 2of5</string>
+    <string name="code_type_maxicode">Maxicode</string>
+    <string name="code_type_us_planet">US Planet</string>
+    <string name="code_type_us_postnet">US Postnet</string>
+    <string name="code_type_uk_postal">UK Postal</string>
+    <string name="code_type_netherlands_kix">Netherlands KIX</string>
+    <string name="code_type_australian_postal">Australian Postal</string>
+    <string name="code_type_upu_fics_postal">UPU FICS Postal</string>
+
+    <!-- yjh 20200304 -->
+    <string name="option_imagecapture_title">ImageCapture Settings</string>
+    <string name="option_imagecapture_illu_level_title">Illumination Power Level</string>
+    <string name="option_imagecapture_illu_title">ImageCapture Illumination</string>
+    <string name="option_imagecapture_illu_enable">Illumination enable</string>
+    <string name="option_imagecapture_illu_disable">Illumination disable</string>
+
+    <string name="option_imagecapture_resolution_title">Image resolution</string>
+    <string name="option_imagecapture_enhancement_title">Image Enhancement</string>
+    <string name="option_imagecapture_exposure_time_title">Exposure Time</string>
+
+
+    <!-- Jayden 20170630 -->
+    <string name="option_multi_Decode_title">Multi Decode Mode</string>
+    <string name="option_multi_Decode_summary">This mode enables decoding multiple bar codes within the scanner\'s field of view.</string>
+    <string name="option_multi_Decode_mode_title">Multi Decode Mode Enable</string>
+    <string name="option_multi_Decode_mode_enable">Enable Multi Decode Mode</string>
+    <string name="option_multi_Decode_mode_disable">Disable Multi Decode Mode</string>
+    <string name="option_multi_Decode_to_read_title">Set the number of bar codes to read</string>
+    <string name="option_multi_Decode_full_read_title">To generate a decode event</string>
+    <string name="option_multi_Decode_full_read_enable">Only generate the result when at least the number of bar codes set in Bar Codes to Read are decoded.</string>
+    <string name="option_multi_Decode_full_read_disable">Generate a decode event after one or more bar codes are decoded.</string>
+
+    <string name="option_idc_title">Intelligent Document Capture (IDC)</string>
+    <string name="option_idc_mode_title">Operating Mode</string>
+    <string name="option_idc_symbology_title">Symbology</string>
+    <string name="option_idc_symbology_summary">Select the bar code type(s) to use when Document Capture mode is not set to Off.</string>
+    <string name="option_idc_x_title">X Coordinate</string>
+    <string name="option_idc_y_title">Y Coordinate</string>
+    <string name="option_idc_width_title">Width</string>
+    <string name="option_idc_height_title">Height</string>
+    <string name="option_idc_folder_title">Folder</string>
+    <string name="option_idc_file_name_title">File Name</string>
+    <string name="option_idc_border_type_title">Border Type</string>
+    <string name="option_idc_illum_power_summary">Illumination Power Level : %s</string>
+
+    <string name="remove_fnc_title">Remove FNC</string>
+    <string name="remove_fnc_enable_summary">Remove Function characters after bar-code reading</string>
+    <string name="remove_fnc_disable_summary">Print all bar-code data</string>
+
+    <string name="scanner_settings_inverse_1d">Inverse 1D</string>
+    <string name="inverse_1d_regular">Regular</string>
+    <string name="inverse_1d_inverse">Inverse</string>
+    <string name="inverse_1d_autodetect">Autodetect</string>
+    <!-- 1D Quiet Zone Level -->
+    <string name="scanner_settings_1d_quiet_zone">1D Quiet Zone Level </string>
+
+    <!-- 20.04.23 PoorQualityDecode -->
+    <string name="scanner_settings_poor_quality_decode">Poor Quality Decode Effort</string>
+
+    <!-- 20.04.23 Pick_list_mode -->
+    <string name="scanner_settings_pick_list_mode">Picklist</string>
+
+    <string name="translate_data_title">Translate Data</string>
+    <string name="translate_data_dialog_title">Input Translate Data</string>
+    <string name="translate_data_dialog_message">ex) 1D,5D;41,42</string>
+
+    <!-- Data formatting-->
+    <string name="advanced_data_title">Custom data formatting</string>
+    <string name="advanced_data_summary">Rule based data manipulation for output</string>
+    <string name="advanced_output">Custom data output</string>
+    <string name="advanced_enable_title">Enable</string>
+    <string name="advanced_enable_summary">Enable/disable custom data formatting</string>
+    <string name="advanced_rules">Rules</string>
+    <string name="advanced_new_rule_title">New rule</string>
+    <string name="advanced_new_rule_dialog_message">Enter rule name</string>
+    <string name="rule_settings">Rule settings</string>
+    <string name="rule_enable_title">Rule enabled</string>
+    <string name="rule_enable_summary">Enabled/disable this rule</string>
+    <string name="rule_filter_title">Filter</string>
+    <string name="rule_filter_summary">Set the filter for this rule</string>
+    <string name="rule_filter_string">String filter</string>
+    <string name="rule_filter_string_title">Data of the containing set string only</string>
+    <string name="rule_filter_string_summary">Specify the string that must be present in the data</string>
+    <string name="rule_filter_string_position">Starting position of the contained string</string>
+    <string name="rule_filter_string_position_summary">All</string>
+    <string name="rule_filter_string_length">Data of the set length only</string>
+    <string name="rule_filter_decoder">Decoder filter</string>
+    <string name="rule_filter_decoder_all_enable">All decoders enabled</string>
+    <string name="rule_filter_decoder_all_enable_summary">Allow all barcode symbologies</string>
+    <string name="rule_actions">Actions</string>
+    <string name="rule_new_action_title">New action</string>
+
+    <string name="code_type_ean_128">EAN 128</string>
+
+
+    <string name="enable_all_sym">Enable All Sym</string>
+    <string name="disable_all_sym">Disable All Sym</string>
+    <string name="about">About</string>
+    <string name="reset_settings">Reset Settings</string>
+    <!-- Honeywell setting end -->
+
+    <!--  Scanner Selection  -->
+    <string name="scanner_select">Scanner Selection</string>
+
+    <!-- BT Ring scanner -->
+    <string name="bt_settings_title">Ring Scanner Settings</string>
+    <string name="bt_settings_summary">Ring scanner individual settings items</string>
+    <string name="bt_scanner_title">Registered Ring Scanner Devices</string>
+    <string name="bt_scanner_paring_title">Ring Scanner Paring</string>
+    <string name="bt_scanner_paring_utility_title">Paring Utility</string>
+    <string name="bt_scanner_paring_utility_summary">Helps to connect ring scanner</string>
+    <string name="bt_scanner_item_title">Ring Scanner Device</string>
+    <string name="bt_scanner_item_info_title">Device Information</string>
+    <string name="bt_connect_name">Ring Scanner Connection</string>
+    <string name="bt_app_name">Ring Scanner</string>
+    <string name="bt_not_support">This device does not support bluetooth</string>
+    <string name="bt_enabled">Please bluetooth must be enabled</string>
+    <string name="bt_menu_turn_on">Turn on Bluetooth</string>
+    <string name="bt_menu_turn_off">Turn off Bluetooth</string>
+    <string name="bt_menu_show_dialog">Show Paring Barcode</string>
+    <string name="bt_menu_search">Search Ring Scanner</string>
+    <string name="bt_scanning">Looking for ring scanner...</string>
+    <string name="bt_select">Select a device to connect</string>
+    <string name="bt_not_found">Ring scanner not found</string>
+    <string name="bt_find_finish">Ring scanner found finished</string>
+    <string name="bt_connected">Connected</string>
+    <string name="bt_already_connected">Ring scanner already connected</string>
+    <string name="bt_disconnected">Disconnected</string>
+    <string name="bt_connection_failed">Connection Failed</string>
+    <string name="bt_permissions">Please permissions must be enabled</string>
+    <string name="bt_overlay_permission">Please overlay permission must be enabled</string>
+    <string name="ime_enabled">Please Ring Scanner IME must be enabled</string>
+    <string name="choose_ime">Please choose Ring Scanner IME in the Ring Scanner</string>
+    <string name="bt_sleep_mode">Please press the scanner button and wake up sleep mode</string>
+    <string name="bt_sleep_mode_check">Checking to scanner sleep</string>
+    <string name="export_fail">No record to export</string>
+    <string name="export_success">Export recode success on </string>
+    <string name="error_m3_devices">This is not a M3 device.</string>
+
+    <string name="devices">WR10 Devices</string>
+
+    <string name="bluetooth_permission_title">Bluetooth permission</string>
+    <string name="bluetooth_permission_grant">Bluetooth permission is required by this App. Please grant in next dialog.</string>
+    <string name="bluetooth_permission_denied">Bluetooth permission was permanently denied. You have to enable permission \"%s\" in App settings.</string>
+
+    <string name="location_permission_title">Location permission</string>
+    <string name="location_permission_grant">This app does not use location information, but scanning for Bluetooth LE devices requires this permission. Please grant in next dialog.</string>
+    <string name="location_permission_denied">As location permission has not been granted, this app cannot scan for Bluetooth LE devices.</string>
+
+    <string name="pairing_request">PAIRING requested\n-> Perform pairing steps. Connect again</string>
+
+    <string name="code_type_settings">Code Type Settings</string>
+    <string name="export_settings">Export Settings</string>
+    <string name="import_settings">Import Settings</string>
+    <string name="sync_settings">Sync Settings</string>
+    <string name="info">Info</string>
+    <string name="scanner_default">Scanner Default</string>
+
+    <string name="scanner_hid">Only HID</string>
+    <string name="scanner_spp">Only SPP</string>
+    <string name="scanner_none">None</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="foreground_service_started">foreground_service_started</string>
+
+</resources>
+
+
+    <!--<resources>
+    <string name="app_name">ScanEmul</string>
+
+    <string name="app_name">WR10</string>
+    <string name="devices">WR10 Devices</string>
+
+    <string name="bluetooth_permission_title">Bluetooth permission</string>
+    <string name="bluetooth_permission_grant">Bluetooth permission is required by this App. Please grant in next dialog.</string>
+    <string name="bluetooth_permission_denied">Bluetooth permission was permanently denied. You have to enable permission \"%s\" in App settings.</string>
+
+    <string name="location_permission_title">Location permission</string>
+    <string name="location_permission_grant">This app does not use location information, but scanning for Bluetooth LE devices requires this permission. Please grant in next dialog.</string>
+    <string name="location_permission_denied">As location permission has not been granted, this app cannot scan for Bluetooth LE devices.</string>
+
+    <string name="pairing_request">PAIRING requested\n-> Perform pairing steps. Connect again</string>
+
+</resources>-->

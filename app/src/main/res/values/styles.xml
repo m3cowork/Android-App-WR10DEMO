@@ -1,0 +1,87 @@
+<resources>
+
+    <style name="MyApp_3dot" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:actionOverflowButtonStyle">@style/OverFlowButton</item>-->
+    </style>
+
+    <style name="OverFlowButton" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="tint">@android:color/white</item>
+    </style>
+
+
+    <style name="AppTheme.DarkActionBar" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@android:color/white</item> <!-- 글자 색상 -->
+        <item name="android:background">@android:color/black</item> <!-- 배경 색상 -->
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme_NoActionBar" parent="android:Theme.Material.Light.NoActionBar"></style>
+
+
+        <style name="CustomMenuItemStyle" parent="android:Theme.Material.Light.NoActionBar">
+            <item name="android:textColor">@color/colorPrimary</item>
+        </style>
+
+
+ </resources>
+
+<!--
+        <item name="tint">@color/white</item>
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:itemBackground">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+
+    </style>
+
+
+
+
+
+         <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+ <style name="PreferenceThemeOverlay" parent="ThemeOverlay.AppCompat.Dark">
+        &lt;!&ndash; EditTextPreference에 대한 스타일 설정 &ndash;&gt;
+        <item name="editTextPreferenceStyle">@style/EditTextPreference</item>
+    </style>
+
+    <style name="EditTextPreference" parent="Preference.EditTextPreference">
+        &lt;!&ndash; 여기에서 글자 색을 설정 &ndash;&gt;
+        <item name="android:textColor">@color/your_text_color</item>
+    </style>-->
+
+
+
+    <!--
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+    <style name="AppTheme" parent="android:Theme.Light">
+
+            <item name="android:popupMenuStyle">@style/PopupMenu</item>
+
+        <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+            <item name="android:popupBackground">@android:color/white</item>
+        </style>
+
+            <item name="android:itemBackground">@android:color/white</item>
+            <item name="android:popupMenuStyle">@style/PopupMenu</item>
+
+        <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+            <item name="android:popupBackground">@android:color/white</item>
+        </style>
+
+
+            <item name="android:itemTextAppearance">?android:attr/textAppearanceMedium</item>
+
+    -->
+

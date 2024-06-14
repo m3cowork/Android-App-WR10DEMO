@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ble"
+        android:title="BLE"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_add_profile"
+        android:enabled="false"
+        android:visible="true"
+        android:title="Add Profile"/>
+
+    <item
+        android:id="@+id/menu_result_win"
+        android:enabled="false"
+        android:visible="true"
+        android:title="Result Window"/>
+
+    <item
+        android:id="@+id/menu_db_export"
+        android:enabled="false"
+        android:visible="true"
+        android:title="DB Expert"/>
+    <item
+        android:id="@+id/menu_db_import"
+        android:enabled="false"
+        android:visible="true"
+        android:title="DB Import"/>
+
+
+</menu>
+
+<!--
+
+
+
+    <item
+        android:id="@+id/it_menu_item_1"
+        android:title="Add Profile"/>
+
+    <item
+        android:id="@+id/it_menu_item_3"
+        android:title="DB Expert"/>
+    <item
+        android:id="@+id/it_menu_item_4"
+        android:title="DB Import"/>
+
+        app:showAsAction="always"
+        app:showAsAction="never"
+
+
+<item
+        android:id="@+id/dot_3"
+        />
+
+    <item
+        android:id="@+id/ble"
+        android:title="BLE"
+        app:showAsAction="never" />
+
+
+        app:showAsAction="always" />
+        app:showAsAction="never" />
+
+-->
