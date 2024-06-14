@@ -27,6 +27,7 @@ import java.util.List;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -55,8 +56,10 @@ public class MainActivity extends AppCompatActivity implements FragmentManager.O
         bluetoothAdapter = bluetoothManager.getAdapter();
 
         if (bluetoothAdapter == null || !bluetoothAdapter.isEnabled()) {
+            Toast.makeText(this, "블루투스 활성화가 필요합니다.", Toast.LENGTH_SHORT).show();
+            finish(); // 애플리케이션 종료
             // Bluetooth is not enabled. Request user to enable it.
-            startActivityForResult(new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE), REQUEST_ENABLE_BT);
+            /// startActivityForResult(new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE), REQUEST_ENABLE_BT);
         } else {
             initBLEScanner();
         }
@@ -84,6 +87,10 @@ public class MainActivity extends AppCompatActivity implements FragmentManager.O
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_ENABLE_BT && resultCode == RESULT_OK) {
             initBLEScanner();
+        }
+        else  {
+            Toast.makeText(this, "블루투스 활성화가 필요합니다.", Toast.LENGTH_SHORT).show();
+            finish(); // 애플리케이션 종료
         }
     }
 
